@@ -60,6 +60,7 @@ body {
   margin: 0;
 
   width: 100%;
+
   min-width: 0;
 
   overflow-x: hidden;
@@ -583,6 +584,10 @@ section {
   padding:
     2rem;
 
+  /*
+     MENU CLARO — IDENTIDADE CASA VIBRA LUZ
+  */
+
   background:
     var(--off-white);
 
@@ -666,6 +671,20 @@ section {
   margin-bottom: 1.5rem;
 
   text-align: center;
+}
+
+
+/*
+   O logo vetorizado já contém a composição
+   CASA VIBRA LUZ.
+
+   Portanto, o texto separado do HTML não deve
+   aparecer no menu.
+*/
+
+.menu-mobile-marca span {
+
+  display: none;
 }
 
 
