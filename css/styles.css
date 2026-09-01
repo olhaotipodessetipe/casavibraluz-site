@@ -1,0 +1,99 @@
+/* ==========================================================================
+   CASA VIBRA LUZ — FOLHA DE ESTILOS PRINCIPAL
+   Baseado no Manual de Identidade Visual (versão revisada) e na Base Mestra.
+   Paleta oficial:
+     --azul-marinho: #02315F  (mar, profundidade, confiança, porto)
+     --terracota:    #8F3324  (casa, terra, arquitetura, calor)
+     --dourado:      #E48F12  (luz, energia, sol, vibração)
+     --off-white:    #FDF1E5  (areia, leveza, fundo, sofisticação natural)
+   Tipografia oficial:
+     Cormorant Garamond Semibold -> nome da marca / personalidade
+     Montserrat Medium           -> textos funcionais / interface
+   ========================================================================== */
+
+:root {
+  /* Paleta oficial — não alterar sem atualizar o Manual de Marca */
+  --azul-marinho: #02315F;
+  --azul-marinho-80: #0a3f70;
+  --terracota: #8F3324;
+  --terracota-escuro: #712819;
+  --dourado: #E48F12;
+  --off-white: #FDF1E5;
+
+  /* Tons neutros derivados apenas para texto/hairlines, dentro do espírito da paleta */
+  --texto-principal: #1c2b22;
+  --texto-sobre-escuro: #FDF1E5;
+  --linha-suave: rgba(2, 49, 95, 0.14);
+
+  --fonte-display: 'Cormorant Garamond', Georgia, serif;
+  --fonte-corpo: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --largura-maxima: 1180px;
+  --espaco-secao: clamp(3.5rem, 8vw, 7rem);
+  --raio: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-corpo);
+  font-weight: 400;
+  color: var(--texto-principal);
+  background: var(--off-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+  color: var(--azul-marinho);
+}
+
+p {
+  margin: 0 0 1em;
+  max-width: 62ch;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+section {
+  padding: var(--espaco-secao) 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--
