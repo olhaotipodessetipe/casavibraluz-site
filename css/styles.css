@@ -1202,3 +1202,157 @@ section {
     font-size: 3.2rem;
   }
 }
+/* =====================================================
+   AJUSTE DO LOGO DA CASA VIBRA LUZ
+   ===================================================== */
+
+/* Marca do cabeçalho */
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+/* Símbolo da Casa Vibra Luz */
+.marca-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Textos da marca */
+.marca-textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.marca-nome {
+  display: block;
+}
+
+.marca-assinatura {
+  display: block;
+}
+
+/* Logo dentro do menu mobile */
+.menu-mobile-marca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.menu-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Logo do rodapé */
+.rodape-marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rodape-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+/* =====================================================
+   PROTEÇÃO DO CABEÇALHO CONTRA ESTOURO
+   ===================================================== */
+
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.nav-principal {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-width: 0;
+}
+
+.cabecalho-acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+  .cabecalho .container {
+    gap: 12px;
+  }
+
+  .marca-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .marca-assinatura {
+    display: none;
+  }
+
+  .marca-nome {
+    font-size: 1.15rem;
+  }
+
+  .nav-principal {
+    display: none;
+  }
+
+  .cabecalho-acoes .btn {
+    display: none;
+  }
+
+  .botao-menu {
+    display: block;
+  }
+
+}
+
+
+/* =====================================================
+   TELAS MUITO PEQUENAS
+   ===================================================== */
+
+@media (max-width: 420px) {
+
+  .marca-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .marca-nome {
+    font-size: 1.05rem;
+  }
+
+  .cabecalho .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+   }
